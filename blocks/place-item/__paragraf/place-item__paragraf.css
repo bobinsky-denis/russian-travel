@@ -1,0 +1,13 @@
+.place-item__paragraf {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+@media all and (max-width: 1024px) {
+  .place-item__paragraf {
+    font-size: clamp(16px, calc(16px + (18 - 16)*((100vw - 768px)/(1024 - 768))), 18px);
+    line-height: clamp(26px, calc(26px + (29 - 26)*((100vw - 768px)/(1024 - 768))), 29px);
+  }
+}

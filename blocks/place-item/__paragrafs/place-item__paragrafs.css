@@ -1,0 +1,17 @@
+.place-item__paragrafs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 26px;
+}
+
+@media all and (max-width: 768px) {
+  .place-item__paragrafs {
+    row-gap: 25px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .place-item__paragrafs {
+    padding: 0 16px;
+  }
+}

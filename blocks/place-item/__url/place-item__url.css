@@ -1,0 +1,11 @@
+.place-item__url {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+@media all and (max-width: 767px) {
+  .place-item__url {
+    padding: 0 16px;
+  }
+}

@@ -1,0 +1,28 @@
+.places {
+  /*max-width: clamp(928px, calc(928px + (984 - 928)*((100vw - 1024px)/(1280 - 1024))), 984px);*/
+  max-width: 984px;
+  margin: 0 auto 92px;
+  padding: 0 clamp(48px, calc(48px + (148 - 48)*((100vw - 1024px)/(1280 - 1024))), 148px);
+}
+
+@media all and (max-width: 1024px) {
+  .places {
+    /*max-width: clamp(728px, calc(728px + (928 - 728)*((100vw - 768px)/(1024 - 768))), 928px);*/
+    margin: 0 auto clamp(87px, calc(87px + (92 - 87)*((100vw - 768px)/(1024 - 768))), 92px);
+    padding: 0 clamp(24px, calc(24px + (48 - 24)*((100vw - 768px)/(1024 - 768))), 48px);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .places {
+    /*max-width: clamp(320px, calc(320px + (728 - 320)*((100vw - 320px)/(768 - 320))), 728px);*/
+    margin: 0 auto clamp(66px, calc(66px + (87 - 66)*((100vw - 320px)/(768 - 320))), 87px);
+    padding: 0 clamp(0px, calc(0px + (24 - 0)*((100vw - 320px)/(768 - 320))), 24px);
+  }
+}
+
+@media all and (max-width: 320px) {
+  .places {
+    margin: 0 auto 66px;
+  }
+}

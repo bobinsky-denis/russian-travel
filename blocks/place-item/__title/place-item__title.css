@@ -1,0 +1,30 @@
+.place-item__title {
+  max-width: clamp(440px, calc(440px + (460 - 440)*((100vw - 1024px)/(1280 - 1024))), 460px);
+  margin: 0;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+}
+
+@media all and (max-width: 1024px) {
+  .place-item__title {
+    max-width: clamp(332px, calc(332px + (440 - 332)*((100vw - 768px)/(1024 - 768))), 440px);
+    font-size: clamp(42px, calc(42px + (72 - 42)*((100vw - 768px)/(1024 - 768))), 72px);
+    line-height: clamp(46px, calc(46px + (76 - 46)*((100vw - 768px)/(1024 - 768))), 76px);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .place-item__title {
+    /*max-width: 332px;*/
+    max-width: clamp(320px, calc(320px + (332 - 320)*((100vw - 320px)/(768 - 320))), 332px);
+    font-size: clamp(32px, calc(32px + (42 - 32)*((100vw - 320px)/(768 - 320))), 42px);
+    line-height: clamp(35px, calc(35px + (46 - 35)*((100vw - 320px)/(768 - 320))), 46px);
+  }
+}
+
+@media all and (max-width: 767px) {
+  .place-item__title {
+    padding: 0 16px;
+  }
+}

@@ -1,0 +1,27 @@
+.photo-grid {
+  margin: 0 auto 90px;
+  padding: 0 48px 0;
+}
+
+@media all and (max-width: 1024px) {
+  .photo-grid {
+    margin: 0 auto clamp(88px, calc(88px + (92 - 88)*((100vw - 768px)/(1024 - 768))), 92px);
+    padding: 0 clamp(24px, calc(24px + (48 - 24)*((100vw - 768px)/(1024 - 768))), 48px) 0;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .photo-grid {
+    margin: 0 auto 88px;
+    padding: 0 clamp(16px, calc(16px + (24 - 16)*((100vw - 320px)/(768 - 320))), 24px) 0;
+
+  }
+}
+
+@media all and (max-width: 320px) {
+  .photo-grid {
+    margin: 0 auto 64px;
+    padding: 0 clamp(16px, calc(16px + (24 - 16)*((100vw - 320px)/(768 - 320))), 24px) 0;
+
+  }
+}

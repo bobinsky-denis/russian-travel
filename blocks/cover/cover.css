@@ -1,0 +1,26 @@
+.cover {
+  max-width: 1184px;
+  min-height: 740px;
+  margin: 0 auto 87px;
+}
+
+@media all and (max-width: 1024px) {
+  .cover {
+    max-width: 1024px;
+    min-height: 640px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .cover {
+    max-width: clamp(320px, calc(320px + (768 - 320)*((100vw - 320px)/(768 - 320))), 768px);
+    min-height: clamp(220px, calc(220px + (480 - 220)*((100vw - 320px)/(768 - 320))), 480px);
+    margin: 0 auto 88px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .cover {
+    margin: 0 auto 44px;
+  }
+}

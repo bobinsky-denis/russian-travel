@@ -1,0 +1,16 @@
+.lead__title {
+  margin: 0;
+  text-align: center;
+  padding-bottom: 32px;
+  font-size: 96px;
+  line-height: 100px;
+  font-weight: 900;
+}
+
+@media all and (max-width: 768px) {
+  .lead__title {
+    padding-bottom: clamp(16px, calc(16px + (32 - 16)*((100vw - 320px)/(768 - 320))), 32px);
+    font-size: clamp(40px, calc(40px + (96 - 40)*((100vw - 320px)/(768 - 320))), 96px);
+    line-height: clamp(44px, calc(44px + (100 - 44)*((100vw - 320px)/(768 - 320))), 100px);
+  }
+}

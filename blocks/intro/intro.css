@@ -1,0 +1,21 @@
+.intro {
+  max-width: 690px;
+  margin-bottom: 92px;
+  padding-left: clamp(48px, calc(48px + (148 - 48)*((100vw - 1024px)/(1280 - 1024))), 148px);
+}
+
+@media all and (max-width: 1024px) {
+  .intro {
+    max-width: clamp(690px, calc(720px - (720 - 690)*((100vw - 768px)/(1024 - 768))), 720px);
+    margin-bottom:clamp(88px, calc(88px + (92 - 88)*((100vw - 768px)/(1024 - 768))), 92px);
+    padding-left: clamp(24px, calc(24px + (48 - 24)*((100vw - 768px)/(1024 - 768))), 48px);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .intro {
+    max-width: clamp(288px, calc(288px + (720 - 288)*((100vw - 320px)/(768 - 320))), 720px);
+    margin-bottom: clamp(64px, calc(64px + (88 - 64)*((100vw - 320px)/(768 - 320))), 88px);
+    padding-left: clamp(16px, calc(16px + (24 - 16)*((100vw - 320px)/(768 - 320))), 24px);
+  }
+}

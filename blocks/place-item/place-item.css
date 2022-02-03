@@ -1,0 +1,53 @@
+.place-item {
+  display: grid;
+  grid-template-columns: clamp(440px, calc(440px + (460 - 440)*((100vw - 1024px)/(1280 - 1024))), 460px) minmax(min-content, max-content);
+  row-gap: 48px;
+  column-gap: clamp(32px, calc(32px + (40 - 32)*((100vw - 1024px)/(1280 - 1024))), 40px);
+  padding-bottom: 80px;
+}
+
+@media all and (max-width: 1024px) {
+  .place-item {
+    grid-template-columns: clamp(340px, calc(340px + (440 - 340)*((100vw - 768px)/(1024 - 768))), 440px) minmax(min-content, max-content);
+    column-gap: clamp(28px, calc(28px + (32 - 28)*((100vw - 768px)/(1024 - 768))), 32px);
+    padding-bottom: clamp(73px, calc(73px + (80 - 73)*((100vw - 768px)/(1024 - 768))), 80px);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .place-item {
+    grid-template-columns: 340px minmax(min-content, max-content);
+    column-gap: 28px;
+    padding-bottom: clamp(61px, calc(61px + (73 - 61)*((100vw - 320px)/(768 - 320))), 73px);
+  }
+}
+
+@media all and (max-width: 767px) {
+  .place-item {
+    grid-template-columns: 320px;
+    justify-content: center;
+    gap: 32px 0;
+    padding-bottom: 50px;
+  }
+}
+
+.place-item:nth-last-child(1) {
+  padding-bottom: 0;
+}
+
+/*
+padding-bottom    1280 - 80
+                  1024 - 80
+                  768  - 73
+                  320  - 50
+
+grid-template-columns           1280 - 460
+                                1024 - 440
+                                768  - 340
+                                320  - 320
+
+gap               1280 - 48 40
+                  1024 - 48 32
+                  768  - 48 28
+                  320  - 32 0
+*/

@@ -1,0 +1,19 @@
+.lead {
+  max-width: 984px;
+  margin: 0 auto 92px;
+  padding: 0 clamp(48px, calc(48px + (148 - 48)*((100vw - 1024px)/(1280 - 1024))), 148px) 0;
+}
+
+@media all and (max-width: 1024px) {
+  .lead {
+    margin: 0 auto clamp(88px, calc(88px + (92 - 88)*((100vw - 768px)/(1024 - 768))), 92px);
+    padding: 0 clamp(0px, calc(48*((100vw - 768px)/(1024 - 768))), 48px)  0;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .lead {
+    max-width: 768px;
+    margin: 0 auto clamp(64px, calc(64px + (88 - 64)*((100vw - 320px)/(768 - 320))), 88px);
+  }
+}

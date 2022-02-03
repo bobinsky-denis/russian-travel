@@ -1,0 +1,16 @@
+.footer {
+  max-width: 1184px;
+  padding: 0 48px 24px;
+}
+
+@media all and (max-width: 1024px) {
+  .footer {
+    padding: 0 clamp(24px, calc(24px + (48 - 24)*((100vw - 768px)/(1024 - 768))), 48px) 24px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .footer {
+    padding: 0 0 24px 16px;
+  }
+}
