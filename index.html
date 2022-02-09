@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Путешествие по России</title>
-  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./pages/index.css">
 </head>
 
 <body class="page">
@@ -14,8 +14,8 @@
   <header class="header">
     <img class="logo" src="images/logo.svg" alt="логотип Россия">
     <div class="header__langs">
-      <div class="header__lang-link header__lang-link_underline">Ru</div>
-      <div class="header__lang-link">En</div>
+      <a href="#" class="header__lang-link header__lang-link_active">Ru</a>
+      <a href="#" class="header__lang-link">En</a>
     </div>
   </header>
 
@@ -87,7 +87,7 @@
             <a href="http://park-kosa.ru" class="place-item__link" target="_blank">park-kosa.ru</a>
           </div>
           <img class="place-item__image" src=" ./images/kosa-image.jpg" alt="Берег Куршской косы">
-          <article class="place-item__paragrafs">
+          <div class="place-item__paragrafs">
             <p class="place-item__paragraf">Здесь, посреди лесов и&nbsp;песчаных дюн, вы сможете увидеть два водных
               горизонта&nbsp;&mdash; спокойного Куршского залива с&nbsp;одной стороны и&nbsp;подёрнутого рябью волн
               Балтийского моря с&nbsp;другой. Уникальная природная зона на&nbsp;краю российского анклава.</p>
@@ -97,7 +97,7 @@
               Балтийская коса,&nbsp;&mdash; и&nbsp;немецкое наследие россыпи небольших приморских городов. Атмосфера
               здешних мест исключает суету, окуная в&nbsp;спокойствие природы и&nbsp;запах стального, прохладного моря.
             </p>
-          </article>
+          </div>
         </li>
 
         <li class="place-item">
@@ -201,8 +201,8 @@
         <li class="footer__item"><a class="footer__link" target="_blank" href="https://travel.yandex.ru">Путешествия</a>
         </li>
       </ul>
-      <p class="footer__copyright">&copy;2022.&nbsp;Денис&nbsp;Бобинский</p>
     </nav>
+    <p class="footer__copyright">&copy;2022.&nbsp;Денис&nbsp;Бобинский</p>
   </footer>
 
 </body>
